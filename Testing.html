@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<!--All HTML documents must start with a document type 
+declaration: <!DOCTYPE html>.--> 
+
+<html lang="en">
+<!--The <html> element is the root element of an HTML page--> 
+<!--You should always include the lang attribute inside the <html> 
+tag, to declare the language of the Web page--> 
+
+
+<head>
+<!--The <head> element contains meta information about the HTML 
+page--> 
+<title>Page Title</title>
+
+<!--An internal CSS is used to define a style for a single HTML 
+page.-->
+<style>
+    body {background-color: powderblue;}
+    h1   {color: blue;}
+    p    {color: #404040;}
+</style>
+
+<!-- Here, an unvisited link will be green with no underline. A 
+visited link will be pink with no underline. An active link will
+be yellow  and underlined. In addition, when mousing over a link 
+(a:hover) it will become red and underlined-->
+<style>
+    a:link {
+        color: green;
+        background-color: transparent;
+        text-decoration: none;
+    }
+    a:visited {
+        color: fuchsia;
+        background-color: transparent;
+        text-decoration: none;
+    }
+    a:hover {
+        color: red;
+        background-color: transparent;
+        text-decoration: underline;
+    }
+    a:active {
+        color: yellow;
+        background-color: transparent;
+        text-decoration: underline;
+}
+</style>
+
+<style>
+    table, th, td {
+      border: 1px solid black;
+      border-collapse: separate;
+    }
+    th, td {
+    padding: 15px;
+    }
+    th {
+    text-align: left;
+    }
+</style>
+
+
+</head>
+<body>
+<!--The <body> element defines the document's body, and is a 
+container for all the visible contents, such as headings, 
+paragraphs, images, hyperlinks, tables, lists, etc.--> 
+<h1>This is a level 1 Heading</h1>
+<p title="This is a paragraph">My first paragraph.</p>
+
+<!--The title attribute defines some extra information about 
+an element.
+
+The value of the title attribute will be displayed as a 
+tooltip when you mouse over the element-->
+
+<p>My second paragraph.</p>
+
+<h2 style="font-size:60px;">This is a level 2 Heading with a big font</h2>
+<!--you can specify the size for any heading with the style 
+attribute, using the CSS font-size property-->
+
+<!--HTML links are defined with the <a> tag--> 
+<!--The href attribute specifies the URL of the 
+page the link goes to--> 
+<a href="https://www.w3schools.com/">This is a link</a>
+<br>
+<a href="https://www.w3schools.com/" target="_self">This link opens in the same tab</a>
+<br>
+<a href="https://www.w3schools.com/" target="_blank">This link opens in a new tab</a>
+<br>
+<!--Needs the concept of frame to understand the following concepts-->
+<a href="https://www.w3schools.com/" target="_parent">This link opens in the parent frame</a>
+<br>
+<a href="https://www.w3schools.com/" target="_top">This link opens in the full body of the window</a>
+<br>
+<a href="#colors">Link to HTML colors</a>
+
+
+<!--HTML images are defined with the <img> tag.--> 
+<!--The src attribute specifies the path to the image 
+to be displayed--> 
+<!--the width and height attributes, which specifies the width
+ and height of the image (in pixels)-->
+<!--The required alt attribute for the <img> tag specifies an 
+alternate text for an image, if the image for some reason 
+cannot be displayed.-->
+
+<img src="D:\Pictures\Screenshot_1.png" alt="Diapositiva" width="104" height="142">
+
+<img src="file:\Black Dog.jpg" alt="an image of a black dog">
+
+<p>This is a paragraph<br> with a line break.</p>
+
+<!-- The <hr> tag defines a thematic break in an HTML page, 
+and is most often displayed as a horizontal rule.-->
+<hr>
+
+<p style="color:red">This is a red paragraph.</p>
+
+<h3>This is a level 3 Heading</h3>
+
+<!--The text inside a <pre> element is displayed in a
+fixed-width font (usually Courier), and it preserves both 
+spaces and line breaks: -->
+<pre>
+    My Bonnie lies over the ocean.
+  
+    My Bonnie lies over the sea.
+  
+    My Bonnie lies over the ocean.
+  
+    Oh, bring back my Bonnie to me.
+</pre>
+
+<img src="https://picsum.photos/400?id=1">
+
+<!--Font color and type, background Style for a element-->
+<h4 style="color:red;background-color:powderblue;
+font-family:verdana;">This is a level 4 Heading</h4>
+
+<!--centered and font-resized paragraph-->
+<p style="text-align:center;font-size:160%;">
+    Centered paragraph with a font at 160%</p>
+
+<br>
+<b>This text is bold</b>
+<!--The HTML <b> element defines bold text, without any 
+extra importance.-->
+
+<strong>This text is important!</strong>
+<!--The HTML <strong> element defines text with strong 
+importance. The content inside is typically displayed in 
+bold.-->
+
+<i>This text is italic</i>
+<!--The HTML <i> element defines a part of text displayed in 
+italic.-->
+
+<em>This text is emphasized</em>
+<!--
+The HTML <em> element defines emphasized text. The content 
+inside is typically displayed in italic.-->
+
+<small>This is some smaller text.</small>
+<!--The HTML <small> element defines smaller text:-->
+
+<p>Do not forget to buy <mark>milk</mark> today.</p>
+<!--The HTML <mark> element defines text that should be 
+marked or highlighted-->
+
+<p>My favorite color is <del>blue</del> red.</p>
+<!--The HTML <del> element defines text that has been 
+deleted from a document. Browsers will usually strike a 
+line through deleted text-->
+
+<p>My favorite color is <del>blue</del> <ins>red</ins>.</p>
+<!--The HTML <ins> element defines a text that has been 
+inserted into a document. Browsers will usually underline
+inserted text-->
+
+<p>This is <sub>subscripted</sub> text.</p>
+<!--The HTML <sub> element defines subscript text. Subscript 
+    text appears half a character below the normal line, and is 
+    sometimes rendered in a smaller font.-->
+    
+    <p>This is <sup>superscripted</sup> text.</p>
+    <!--The HTML <sup> element defines superscript text. Superscript 
+        text appears half a character above the normal line, and is 
+        sometimes rendered in a smaller font.-->
+        
+        
+<img src="https://picsum.photos/200" alt="A photo" width="400" height="400">
+        
+<img src="https://picsum.photos/400?id=3" alt="">
+
+<h1>HTML Quotation and Citation Elements</h1>
+<!--The HTML <blockquote> element defines a section that is 
+quoted from another source.
+Browsers usually indent <blockquote> elements.-->
+    <p>Here is a quote from WWF's website:</p>
+    <blockquote cite="http://www.worldwildlife.org/who/index.html">
+        For 50 years, WWF has been protecting the future of nature.
+The world's leading conservation organization,
+WWF works in 100 countries and is supported by
+1.2 million members in the United States and
+close to 5 million globally.
+</blockquote>
+
+<!--The HTML <q> tag defines a short quotation.
+Browsers normally insert quotation marks around the quotation.-->
+<p>WWF's goal is to: <q>Build a future where people live in 
+harmony with nature.</q></p>
+
+<!--The HTML <abbr> tag defines an abbreviation or an acronym, 
+like "HTML", "CSS", "Mr.", "Dr.", "ASAP", "ATM".
+Tip: Use the global title attribute to show the description 
+for the abbreviation/acronym when you mouse over the element.-->
+<p>The <abbr title="World Health Organization">WHO</abbr> 
+was founded in 1948.</p>
+
+<!--The HTML <address> tag defines the contact information for 
+the author/owner of a document or an article.
+
+The text in the <address> element usually renders in italic, 
+and browsers will always add a line break before and after the 
+<address> element.-->
+<address>
+Written by John Doe.<br>
+Visit us at:<br>
+Example.com<br>
+Box 564, Disneyland<br>
+USA
+</address>
+
+<!--The HTML <cite> tag defines the title of a creative work 
+(e.g. a book, a poem, a song, a movie, a painting, a sculpture, 
+etc.).-->
+<p><cite>The Scream</cite> by Edvard Munch. Painted in 1893.</p>
+
+
+<p>If your browser supports bi-directional override (bdo), 
+the next line will be written from right to left (rtl):</p>
+
+<bdo dir="rtl">This line will be written from right to left</bdo>
+
+
+
+<h1 id="colors">HTML Colors</h1>
+
+<!--HTML colors are specified with predefined color names, or 
+with RGB, HEX, HSL, RGBA, or HSLA values.--> 
+
+<a href="https://www.w3schools.com/colors/colors_names.asp">
+Color Names Supported by All Browsers
+</a>
+
+<h2 style="background-color:DodgerBlue;">Hello World</h2>
+
+<p style="background-color:Tomato;">
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed 
+diam nonummy nibh euismod tincidunt ut laoreet dolore magna 
+aliquam erat volutpat.
+
+Ut wisi enim ad minim veniam, quis nostrud exerci tation 
+ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo 
+consequat.
+</p>
+
+<h3 style="color:Tomato;">Hello World</h3>
+
+<p style="color:DodgerBlue;">Lorem ipsum dolor sit amet, 
+consectetuer adipiscing elit, sed diam nonummy nibh euismod 
+tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+
+<p style="color:MediumSeaGreen;">Ut wisi enim ad minim veniam,
+quis nostrud exerci tation ullamcorper suscipit lobortis nisl 
+ut aliquip ex ea commodo consequat.</p>
+
+<h1 style="border:2px solid Tomato;">Hello World</h1>
+<h1 style="border:2px solid DodgerBlue;">Hello World</h1>
+<h1 style="border:2px solid Violet;">Hello World</h1>
+
+<p>Same as color name "Tomato":</p>
+
+<h1 style="background-color:rgb(255, 99, 71);">rgb(255, 99, 71)</h1>
+<h1 style="background-color:#ff6347;">#ff6347</h1>
+<h1 style="background-color:hsl(9, 100%, 64%);">hsl(9, 100%, 64%)</h1>
+
+<p>Same as color name "Tomato", but 50% transparent:</p>
+<h1 style="background-color:rgba(255, 99, 71, 0.5);">rgba(255, 99, 71, 0.5)</h1>
+<h1 style="background-color:hsla(9, 100%, 64%, 0.5);">hsla(9, 100%, 64%, 0.5)</h1>
+
+<p>In addition to the predefined color names, colors can be specified using RGB, HEX, 
+HSL, or even transparent colors using RGBA or HSLA color values.</p>
+
+<h1 style="background-color:rgb(255, 0, 0);">rgb(255, 0, 0)</h1>
+<h1 style="background-color:rgb(0, 0, 255);">rgb(0, 0, 255)</h1>
+<h1 style="background-color:rgb(60, 179, 113);">rgb(60, 179, 113)</h1>
+<h1 style="background-color:rgb(238, 130, 238);">rgb(238, 130, 238)</h1>
+<h1 style="background-color:rgb(255, 165, 0);">rgb(255, 165, 0)</h1>
+<h1 style="background-color:rgb(106, 90, 205);">rgb(106, 90, 205)</h1>
+
+<h1 style="background-color:rgb(60, 60, 60);">rgb(60, 60, 60)</h1>
+<h1 style="background-color:rgb(100, 100, 100);">rgb(100, 100, 100)</h1>
+<h1 style="background-color:rgb(140, 140, 140);">rgb(140, 140, 140)</h1>
+<h1 style="background-color:rgb(180, 180, 180);">rgb(180, 180, 180)</h1>
+<h1 style="background-color:rgb(200, 200, 200);">rgb(200, 200, 200)</h1>
+<h1 style="background-color:rgb(240, 240, 240);">rgb(240, 240, 240)</h1>
+
+<p>
+An RGBA color value is specified with:
+rgba(red, green, blue, alpha)
+The alpha parameter is a number between 0.0 (fully transparent)
+and 1.0 (not transparent at all):
+</p>
+
+<h1 style="background-color:rgba(255, 99, 71, 0);">rgba(255, 99, 71, 0)</h1>
+<h1 style="background-color:rgba(255, 99, 71, 0.2);">rgba(255, 99, 71, 0.2)</h1>
+<h1 style="background-color:rgba(255, 99, 71, 0.4);">rgba(255, 99, 71, 0.4)</h1>
+<h1 style="background-color:rgba(255, 99, 71, 0.6);">rgba(255, 99, 71, 0.6)</h1>
+<h1 style="background-color:rgba(255, 99, 71, 0.8);">rgba(255, 99, 71, 0.8)</h1>
+<h1 style="background-color:rgba(255, 99, 71, 1);">rgba(255, 99, 71, 1)</h1>
+
+<h1 style="background-color:#ff0000;">#ff0000</h1>
+<h1 style="background-color:#0000ff;">#0000ff</h1>
+<h1 style="background-color:#3cb371;">#3cb371</h1>
+<h1 style="background-color:#ee82ee;">#ee82ee</h1>
+<h1 style="background-color:#ffa500;">#ffa500</h1>
+<h1 style="background-color:#6a5acd;">#6a5acd</h1>
+
+<h1 style="background-color:#404040;">#404040</h1>
+<h1 style="background-color:#686868;">#686868</h1>
+<h1 style="background-color:#a0a0a0;">#a0a0a0</h1>
+<h1 style="background-color:#bebebe;">#bebebe</h1>
+<h1 style="background-color:#dcdcdc;">#dcdcdc</h1>
+<h1 style="background-color:#f8f8f8;">#f8f8f8</h1>
+
+<h1 style="background-color:hsl(0, 100%, 50%);">hsl(0, 100%, 50%)</h1>
+<h1 style="background-color:hsl(240, 100%, 50%);">hsl(240, 100%, 50%)</h1>
+<h1 style="background-color:hsl(147, 50%, 47%);">hsl(147, 50%, 47%)</h1>
+<h1 style="background-color:hsl(300, 76%, 72%);">hsl(300, 76%, 72%)</h1>
+<h1 style="background-color:hsl(39, 100%, 50%);">hsl(39, 100%, 50%)</h1>
+<h1 style="background-color:hsl(248, 53%, 58%);">hsl(248, 53%, 58%)</h1>
+
+
+<h1>HTML Images</h1>
+
+<p>
+<img src="Black Dog.jpg" alt="A dog" 
+style="float:right;width:400px;height:300px;">
+The image will float to the left of the text.
+</p>
+
+
+<h1>HTML Tables</h1>
+
+<table style="width:50%">
+    <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Age</th>
+    </tr>
+    <tr>
+        <td>Jill</td>
+        <td>Smith</td>
+        <td>50</td>
+    </tr>
+    <tr>
+        <td>Eve</td>
+        <td>Jackson</td>
+        <td>94</td>
+    </tr>
+    <tr>
+        <td>John</td>
+        <td>Doe</td>
+        <td>80</td>
+    </tr>
+  </table>
+
+  <h2>Collapsed Borders</h2>
+  <p>If you want the borders to collapse into one border, add the CSS border-collapse property.</p>
+
+  <h2>Cellpadding</h2>
+  <p>Cell padding specifies the space between the cell content and its borders.</p>
+
+<h1>This is a level 1 Heading</h1>
+<h1>This is a level 1 Heading</h1>
+<h1>This is a level 1 Heading</h1>
+<h1>This is a level 1 Heading</h1>
+<h1>This is a level 1 Heading</h1>
+
+<!--
+--> 
+<!--
+--> 
+<!--
+--> 
+
+
+</body>
+</html>

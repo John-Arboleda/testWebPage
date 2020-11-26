@@ -1,0 +1,767 @@
+* {
+    color: rgb(0, 0, 0);
+    }
+
+h1, h2 {
+    text-align: center;
+    }
+
+/*
+background Property: property used to set the background of HTML elements
+*/
+
+#part1 {
+    background-color: rgba(100, 255, 86, 0.8);
+    }
+    /*background color: defines the color of the background of a element*/
+
+#part2 {
+    
+    background-image: url("slackhq.png"); /*sets a image as a element's background*/
+    background-origin: padding-box; /*defines the origin of the background (padding-box|border-box|content-box)*/
+    background-attachment: scroll;  /*The background scrolls with the rest of the page or it's fixed (scroll|fixed|local)*/
+    background-color: rgba(255, 255, 255, 0.5);
+    background-size: 20px; /*size of the background image*/
+    background-blend-mode: lighten; /*defines the blending mode for the background's colors or images 
+    (normal|multiply|screen|overlay|darken|lighten|color-dodge|saturation|color|luminosity)*/
+    background-repeat: repeat-x; /*Defines how the background image repeats (repeat|repeat-x|repeat-y|no-repeat)*/
+    background-position: 60px; /*(repeat|repeat-x|repeat-y|no-repeat)*/
+    }
+
+/*Border*/
+
+#borderStyle1 {
+    border-style: dotted; /* [ none | hidden | dotted | dashed | solid | double | groove | ridge | inset | outset ]*/
+    border-width: 2px 5px 1px 8px; /*thickness of each border*/
+    border-color: red green blue gray;/*color of each border*/
+}
+
+#borderStyle2 {
+    border-top-style: dotted;
+    border-right-style: solid;
+    border-bottom-style: dotted;
+    border-left-style: solid;
+}
+
+#borderStyle3 {
+    border: 5px solid red; 
+    /*shorthand syntax [width style color]*/
+}
+
+#borderStyle4 {
+    border: 3px solid green;
+    border-radius: 5px; /*curve borders*/
+  }
+
+/*Margin*/
+
+/*distance of certain element form the viewpage limit*/
+#margin1{
+    margin-top: 20px;
+    margin-left: 40px;
+    margin-right: 35px;
+    margin-bottom: 30px;
+}
+
+
+
+#margin2{
+    /*shorthand method
+    one value: sets the margin from al four sides of the element
+    two values: top-bottom, rigth-left
+    three values: top, rigth-left, bottom
+    four values: top, right, bottom, left
+    */
+    margin: 25px 50px 75px 100px;
+}
+
+/*Padding
+defines the distance of the content of an element from its borders
+it can be set as a percentage too
+*/
+
+#padding1{
+    border: 5px solid black;
+    margin: 25px;
+    padding: 20px;
+}
+
+#padding2{
+    border: 5px solid black;
+    margin: 25px;
+}
+
+/*height and width
+
+
+*/
+#testhw1{
+    height: 200px;
+    width: 50%;
+    background-color: powderblue;
+    border: 2px solid darkblue;
+    margin: 25px;
+}
+
+#testhw2{
+    height: 200px;
+    min-width: 300px;
+    max-width: 50%;
+    background-color: powderblue;
+    border: 2px solid darkblue;
+    margin: 25px;
+}
+
+/*Outline
+similar to a border but it doesn't take any space, its width doesn't 
+count as part of the box
+*/
+
+#outline1{
+    border: 2px solid black;
+    outline: #4CAF50 solid 10px;
+    margin: auto;  
+    padding: 20px;
+    text-align: center;
+    margin: 25px;
+}
+
+#outline2{
+    margin: 30px;
+    background:yellow;
+    border: 1px solid black;
+    outline: 1px solid red;
+    outline-offset: 15px;
+    text-align: center;
+    padding: 20px;
+}
+
+
+.format{
+    color: navy;
+    /*Specify the color of the text of an element.*/
+}
+
+#text1{
+    text-align: justify; /*[left | right | center | justify]*/
+    text-transform: capitalize; /*[capitalize | lowercase | none | uppercase]*/
+    letter-spacing: 0.5px; 
+    text-indent: 25px;
+    line-height: 20px;
+    word-spacing: 15px;
+}
+
+/*font property*/
+
+#font1{
+    font-family: "Times New Roman", Times, serif;
+    font-style: normal; /*[normal | italic | oblique]*/
+    font-weight: bold; /*[normal | bold | bolder | lighter | 100 | 200 | 300 | 400 = normal
+    | 500 | 600 | 700 = bold | 800 | 900 ]*/
+    font-size: 20px;
+}
+
+#font2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-weight: lighter; 
+    font-variant: small-caps;/*[normal | small-caps]*/
+    font-size: 2em;
+}
+
+#font3{
+    font-family: "Lucida Console", Courier, monospace;
+    font-style: oblique;
+    font-weight: normal;
+    font-size: 2vw;
+}
+
+#font4{
+    font: 20px Arial, sans-serif;
+}
+
+
+
+#font5{
+    /*[ font-style font-variant font-weight font-size/line-height font-family ]*/
+    font: italic small-caps bold 12px/30px Georgia, serif;
+}
+
+/*lists*/
+
+#listA{
+    list-style-type: none; 	/*[disc | circle | square | decimal | decimal-leading-zero | 
+    lower-roman | upper-roman | lower-greek | lower-latin | upper-latin | armenian | 
+    georgian | lower-alpha | upper-alpha | none]*/
+    border: 1px solid #aaa;
+    padding: 0;
+}
+
+#listA li{
+    padding: 8px 16px;
+    border-bottom: 1px solid #aaa;
+}
+
+/*Para que el último borde de la lista no sea doble*/
+#listA li:last-child{
+    border-bottom: none;
+}
+
+#listB{
+    list-style-type: square;
+}
+
+#listC{
+    list-style-type: upper-roman;
+}
+
+#listD{
+    list-style-type: lower-alpha;
+}
+/*Tables*/
+
+#customers {
+    /*propeties aplied to the external border of the table an the fonts of the table**/
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+  
+#customers td, #customers th {
+    /*properties applied to header cells and data cells*/
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#customers tr:nth-child(even){
+    /*changes the background of even columns*/
+    background-color: #f2f2f2;
+}
+
+/*hover cambia de color a pasar el cursosr sobre la fila*/
+#customers tr:hover {
+    background-color: #ddd;
+}
+
+#customers th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #4CAF50;
+    color: white;
+}
+
+#tableBox{
+    max-width: 500px;
+    border: 2px inset #888;
+}
+
+#table2 {
+    border-collapse: collapse; /*[separate | collapse ]*/
+    width: 100%;
+}
+  
+#table2 th, #table2 td {
+    text-align: left;
+    padding: 8px;
+}
+  
+#table2 tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/*position property*/
+
+#static1 {
+    /*[static | relative | absolute | fixed | sticky]*/
+    position: static;
+    border: 3px solid green;
+    width: 700px;
+}
+
+#relative1 {
+    position: relative;
+    left: 200px;
+    width: 700px;
+    border: 3px solid green;
+}
+
+#fixed1 {
+/*    position: fixed;*/
+    bottom: 250px;
+    right: 0;
+    width: 300px;
+    border: 3px solid green;
+}
+
+#overflowTest {
+    background: #4CAF50;
+    color: white;
+    padding: 15px;
+    width: 50%;
+    height: 100px;
+    overflow: scroll; /*[auto | hidden | scroll | visible]*/
+    border: 1px solid #ccc;
+}
+
+#visible1 {
+    background-color: #eee;
+    width: 200px;
+    height: 50px;
+    border: 1px dotted black;
+    overflow: visible;
+}
+
+#hidden1 {
+    background-color: #eee;
+    width: 200px;
+    height: 50px;
+    border: 1px dotted black;
+    overflow: hidden;
+    position: relative;
+    left: 220px;
+}
+
+/*float & clear*/
+
+.float1 {
+    background: #4CAF50;
+    color: white;
+    padding: 15px;
+    width: 50px;
+    height: 50px;
+    overflow: scroll;
+    border: 1px solid #ccc;
+    float: left; /*[left | right | none]*/
+}
+
+#clear1 {
+    clear: left; /*[left | right | auto | both | none]*/
+}
+
+#clear2 {
+    border: 3px solid #4CAF50;
+    padding: 5px;
+}
+
+#clear3 {
+    border: 3px solid #4CAF50;
+    padding: 5px;
+    overflow: auto;/*clearfix simple*/
+}
+
+/*float Examples*/
+
+.box1 {
+    float: left;
+    width: 33.33%;
+    padding: 50px;
+    box-sizing: border-box; /*Modifies the width and height properties of default CSS box model
+    [content-box | padding-box | border-box]*/
+}
+
+/*alternative clearfix*/
+.clearfix1::after {
+    content: "";
+    clear: both;
+    display: table;
+    box-sizing: border-box;
+}
+
+.box2 {
+    float: left;
+    width: 50%;
+    padding: 50px;
+    height: 300px;
+    box-sizing: border-box;
+}
+
+/*navigation bar*/
+
+
+#bar1 {
+    /*list without format but with black background*/
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    border: 2px inset white;
+}
+
+#bar1 li {
+    /*converts a vertical list into a horizontal list*/
+    float: left;
+    border-right: 2px inset white;
+}
+
+#bar1 li a {
+    /*formatting the links of the list*/
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#bar1 li a:hover {
+    /*format while the cursor hovers over element*/
+    background-color: darkred;
+}
+
+
+/*Display: inline*/
+
+span.a {
+    display: inline; /* the default for span*//*centered vertical align*/
+    padding: 5px;
+    border: 1px solid blue;  
+    background-color: yellow; 
+  }
+  
+  span.b {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    padding: 5px;
+    border: 1px solid blue;    
+    background-color: yellow; 
+  }
+  
+  span.c {
+    display: block;
+    width: 100px;
+    height: 100px;
+    padding: 5px;
+    border: 1px solid blue;    
+    background-color: yellow; 
+  }
+
+/*Horizontal & Vertical Align*/
+
+/*center align: 
+   the element takes up 50% width and margin: auto; splits the 
+   remaining space equally */
+.center1 {
+    margin: auto;
+    width: 50%;
+    border: 3px solid green;
+    padding: 10px;
+}
+
+.center2 {
+    padding: 70px 0;
+    border: 3px solid green;
+    text-align: center;
+}
+
+/*Combinators*/
+
+/*descendand selector*/
+#comb1 p {
+    /*selects all the <p> descendands on the #comb1 element, even 
+    if those are inside of another element*/
+    background-color: yellow;
+}
+
+/*child selector*/
+#comb2 > p {
+    /*selects all the <p> childs of the #comb2 element. It do not selects 
+    descendands inside another element*/
+    background-color: yellow;
+}
+
+/*Adjacent Sibling Selector*/
+#comb3 + p {
+    /*selects the following <p> element sibling of #comb3*/
+    background-color: yellow;
+}
+
+/*General Sibling Selector*/
+#comb4 ~ p {
+    /*selects all the following <p> elements siblings of #comb4*/
+  background-color: yellow;
+}
+
+/*Pseudo-classes*/
+
+/* unvisited link */
+#link1:link {
+    color: red;
+}
+
+/* visited link */
+#link1:visited {
+    color: green;
+}
+
+/* mouse over link */
+#link1:hover {
+    color: hotpink;
+}
+
+/* selected link */
+#link1:active {
+    color: blue;
+}
+
+/*
+Note: a:hover MUST come after a:link and a:visited in the CSS 
+definition in order to be effective! a:active MUST come after 
+a:hover in the CSS definition in order to be effective! Pseudo-class 
+names are not case-sensitive.
+*/
+
+
+#show2 {
+    display: none;/*hides the paragraph*/
+    background-color: yellow;
+    padding: 20px;
+}
+
+#show1:hover p {
+    display: block;/*displays de paragraph when hoover on*/
+}
+
+/*first child*/
+#first1 p:first-child {/*first <p> of element #first1*/
+    color: blue;
+} 
+
+#first2 p i:first-child {/*first <i> of each element <p> from #first2*/
+    color: blue;
+}
+
+#first3 p:first-child i {/*all <i> of the first <p> from #first3*/
+    color: blue;
+}
+
+/*Pseudo-elements*/
+#pseudo1::first-line {
+    color: #ff0000;
+    font-variant: small-caps;
+  }
+
+#pseudo2::first-letter {
+    color: #ff0000;
+    font-size: xx-large;
+  }
+
+#pseudo3 p::before {
+    content: "Text inserted before ";
+  }
+
+#pseudo4 p::after {
+    content: "Text inserted after";
+}
+
+#pseudo5 ::selection {
+/*funciona separado de un espacio de #pseudo5*/
+/*Para todo el texto de la página se coloca solo*/
+    color: yellow;
+    background: black;
+  }
+
+/*Opacity/Transparency*/
+
+#picsum5 {
+    opacity: 50%;
+}
+
+.picsumA {
+    opacity: 50%;
+}
+
+.picsumA:hover {
+    opacity: 100%;
+}
+
+/*Navigation bar*/
+
+/*Step 1: */
+.bar2 {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: cornflowerblue;
+    border: 1px solid black;
+}
+
+.bar2 li {
+    float: left;
+    border-right: 1px solid black;
+}
+
+.bar2 li a {
+    padding: 10px;
+    display: block; /*the area of the button becomes clickable*/
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.bar2 li a:hover{
+    background-color: darkblue;
+    color: white;
+}
+
+/*Dropdowns*/
+
+/*Button*/
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+/*container with the button and the menu*/
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/*container with the menu options*/
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/*links as menu options*/
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/*Change color when hovering on the button*/
+.dropdown-content a:hover {
+    background-color: #f1f1f1
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Change the background color of the dropdown button when the 
+dropdown content is shown */
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+
+/*Attribute selector*/
+
+/*selects all elements with the target attribute*/
+.attr1[target] {
+    background-color: yellow;
+}
+
+/*selects all elements with the target attribute set to "_blank"*/
+.attr2[target=_blank] {
+    background-color: yellow;
+}
+
+/*selects all elements with the title attribute set to value with the word "Reference" in it*/
+.attr3[title~="Reference"] {
+    background-color: yellow;
+}
+
+/*selects all elements with a class that begins with the word "top"*/
+.attr4 [class|=top] {/*separado por un espacio, funciona por sí 
+    solo para aplicar a las coincidencias del documento*/
+    background: yellow;
+}
+
+/*selects all elements with a class that begins with the characters "top"*/
+.attr5 [class^=top] {/*separado por un espacio, funciona por sí 
+    solo para aplicar a las coincidencias del documento*/
+    background: yellow;
+}
+
+/*selects all elements with a class that ends with the characters "test"*/
+.attr6 [class$="test"] {/*separado por un espacio, funciona por sí 
+    solo para aplicar a las coincidencias del documento*/
+    background: yellow;
+}
+
+/*selects all elements with a class that contains the characters "te"*/
+.attr7 [class*="te"] {/*separado por un espacio, funciona por sí 
+    solo para aplicar a las coincidencias del documento*/
+    background: yellow;
+}
+
+/*Forms*/
+
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+  
+input[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+  
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+  
+#testForm {
+    margin: auto;
+    max-width: 400px;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+/*counters*/
+
+#count {
+    /*section es una etiqueta personalizada*/
+    /*counter-reset está declarado en elemento de orden superior*/
+    /*declara contador para <h1>*/
+    counter-reset: section;
+}
+  
+#count h1 {
+    counter-reset: subsection;
+}
+
+#count h2 {
+    counter-reset: subtitle;
+}
+  
+#count h1::before {
+    counter-increment: section;
+    content: "Section " counter(section) ". ";
+}
+  
+#count h2::before {
+    counter-increment: subsection;
+    content: counter(section) "." counter(subsection) " ";
+}
+
+#count h3::before {
+    counter-increment: subtitle;
+    content: counter(section) "." counter(subsection) "." counter(subtitle) " ";
+}

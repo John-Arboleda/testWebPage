@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <title>Repaso 1</title>
+    <link rel="stylesheet" href="style2.css"/>
+    <meta charset="UTF-8"/>
+    <style>
+        .container{
+            border: 3px dashed black;
+            height: 400px;
+            width: 400px;
+            background-color: rgb(197, 197, 197);
+            position: relative;
+            margin: auto;
+            display: flex;
+        }
+        .content{
+            height: 150px;
+            width: 150px;
+            position: absolute;
+        }
+        .upper-left{
+            border: 3px dashed green;
+            left: 15px;
+            top: 15px;
+        }
+        .upper-right{
+            border: 3px dashed blue;
+            right: 15px;
+            top: 15px;
+        }
+        .bottom-left{
+            border: 3px dashed red;
+            left: 15px;
+            bottom: 15px;
+        }
+        .bottom-right{
+            border: 3px dashed darkorange;
+            right: 15px;
+            bottom: 15px;
+        }
+        .center{
+            background-color: rgba(255, 255, 255, 0.568);
+            margin: auto;
+            position: relative;
+            z-index: 1;
+            height: 150px;
+            width: 150px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        @media screen and (min-width: 700px){
+            body {
+                background-color: black;
+            }
+            .container{
+                border-color: white;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="content upper-left"></div>
+        <div class="content upper-right"></div>
+        <div class="content bottom-left"></div>
+        <div class="content bottom-right"></div>
+        <div class="center">
+            <div class="upper-left"></div>
+            <div class="upper-right"></div>
+            <div class="bottom-left"></div>
+            <div class="bottom-right"></div>
+        </div>
+    </div>
+</body>
+</html>
